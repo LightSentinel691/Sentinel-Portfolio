@@ -84,11 +84,12 @@ nav ul li:hover {
 
 .social_media {
     position: fixed;
-    bottom: 50px;
+    bottom: 30px;
     right: 40px;
     float: right;
     background-color: rgb(5, 173, 173);
     border-radius: 10px;   
+    z-index: 10;
 }
 
 .smedia_icon {
@@ -211,4 +212,52 @@ nav ul li:hover {
     left: 30px;
     margin-left: 15px;
     color: rgb(105, 104, 104);
+}
+
+
+
+/* Vision Section  */
+.vision_section {
+    height: 500px;
+    background-color: rgb(68, 68, 68);
+    position: relative;
+    margin: 30px 0 0;
+}
+.vision_body {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    left: 0; 
+    right: 0; 
+    margin-inline: auto;
+    height: 300px;
+}
+.book_call {
+    margin-top: 90px;
+}
+
+/* Footer Section Styling */
+.footer_section {
+    height: 100px;
+    background-color: rgba(100, 99, 99, 0.575);
+}
+.footer_nav ul li {
+    display: inline-block;
+    border: 2px solid;
+    padding: 15px;
+    margin-top: 20px;
+}
+.footer_nav ul {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+
+
+/* No display section */
+.no_display {
+    display: none;
 }
