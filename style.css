@@ -87,7 +87,7 @@ nav ul li:hover {
     bottom: 30px;
     right: 40px;
     float: right;
-    background-color: rgb(5, 173, 173);
+    background-color: #222222;
     border-radius: 10px;   
     z-index: 10;
 }
@@ -101,7 +101,7 @@ nav ul li:hover {
 
 .smedia_icon:hover {
     scale: 1.7;
-    background-color: rgb(119, 65, 0);
+    background-color: #7B7B7B;
     border-radius: 15px;
 }
 
@@ -152,10 +152,18 @@ nav ul li:hover {
 
 /* New Section */
 /* Blogs section styles */
+.blogs_section {
+    background-color: #F1EFEC;
+}
 .blogs_body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 37px;
+}
+.blogs-body_content {
+    background-color: #FFFFFF;
+    border-radius: 15px;
 }
 .blogs_header {
     display: block;
@@ -165,7 +173,7 @@ nav ul li:hover {
 .blogs_div {
     margin: 10px 30px;
     display: inline-block;
-    box-shadow: -3px 4px 5px rgb(17, 17, 17);
+    box-shadow: -3px 4px 5px #7B7B7B;
     border-radius: 15px;
     width: 350px;
     height:450px;
@@ -174,12 +182,14 @@ nav ul li:hover {
 .blogs_image {
     height: 360px;
     width: 350px;
-    opacity: 0.6;
+    opacity: 0.9;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
-
-
+.blogs_header h2 {
+    font-size: 2.8em;
+    font-weight: lighter;
+}
 .blogs_div p {
     padding: 25px  10px 20px;
     text-align: center;
@@ -188,12 +198,12 @@ nav ul li:hover {
 
 }
 .blogs_div:hover {
-    box-shadow: -7px 6px 5px black;
+    box-shadow: -7px 4px 5px #7B7B7B;
 }
 
 .blogs_div:hover  .blogs_image{
-    opacity: 0.9;
-    background: black;
+    opacity: 1;
+    background: #222222;
 }
 .blogs_category {
     background-color: black;
@@ -213,47 +223,140 @@ nav ul li:hover {
     margin-left: 15px;
     color: rgb(105, 104, 104);
 }
+.read_more {
+    text-align: center;
+    padding:10px 0 30px;
+    background-color: #F1EFEC;
+}
+.read_more_text {
+    margin: 0 10px 10px;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+
+.read_more_text:hover {
+    background-color: #7B7B7B;
+    color: #FFFFFF;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #222222;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .blog_title_content {
+    margin: 0 10px 10px;
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1em;
+    background-color:#FFFFFF;
+  }
+.blog_title {
+    display: inline-block;
+}
+
+
+
+
+
+
 
 
 
 /* Vision Section  */
 .vision_section {
     height: 500px;
-    background-color: rgb(68, 68, 68);
+    background-color: #F8F8F8;
     position: relative;
-    margin: 30px 0 0;
 }
 .vision_body {
     display: inline-block;
     position: absolute;
-    top: 40%;
+    top: 25%;
     text-align: center;
     left: 0; 
     right: 0; 
     margin-inline: auto;
-    height: 300px;
+    height: 200px;
+    width: 650px;
+    color: #222222;
+}
+.vision_body h3 {
+    font-size: 2.1em;
+    margin-bottom: 13px ;
+}
+.vision_body p {
+    font-size: 1.3em;
+}
+.vision_body a {
+    font-size: 1.2em;
+    color: #222222;
+    text-decoration: none;
+}
+.vision_body a:hover {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    background-color: #7B7B7B;
+    padding: 10px;
+    border-radius: 16px;
 }
 .book_call {
     margin-top: 90px;
 }
 
+
 /* Footer Section Styling */
 .footer_section {
-    height: 100px;
-    background-color: rgba(100, 99, 99, 0.575);
+    height: 150px;
+    background-color: #222222;
+    position: relative;
 }
 .footer_nav ul li {
     display: inline-block;
-    border: 2px solid;
-    padding: 15px;
-    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    position: relative;
 }
 .footer_nav ul {
     display: flex;
+    position: absolute;
+    top: 40%;
+    left: 5%;
     justify-content: flex-start;
-
+    align-items: center;
+}
+.footer_nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 11px;
+    
 }
 
+.footer_nav ul li:hover {
+    background-color: #7B7B7B;
+    color: rgb(70, 67, 67);
+    text-align: center;
+    font-size: 1.2em;
+    
+}
+
+.nav_button {
+    border-radius: 15px;
+    margin-right: 5px;
+    text-align: center;
+}
+/* .active {
+    background-color: #7B7B7B;
+} */
 
 
 
