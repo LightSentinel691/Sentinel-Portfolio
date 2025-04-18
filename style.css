@@ -12,9 +12,10 @@
     position: relative;
 }
 .header {
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: #555555;
     position: sticky;
     top: 0;
+    z-index: 15;
 }
 .header img {
     position: fixed;
@@ -114,6 +115,93 @@ nav ul li:hover {
     border-radius: 15px;
 }
 
+/* About Me Section */
+.about_me_body {
+    background-color: #DCDCDC;
+    padding: 15px;
+    padding-bottom: 30px;
+}
+.about_me_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: "header main aside";
+    background-color:#DCDCDC;
+    width: 80%;
+    margin: auto;
+    height: 480px;
+}
+.about_me_1 {
+    grid-area: header;
+}
+.about_me_2 {
+    grid-area: main;
+    height: 450px;
+}
+.about_me_3 {
+    grid-area: aside;
+}
+.about_me_1 h3 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.about_me_1 p {
+    width: 400px;
+    margin: auto;
+    color: #414A4C;
+}
+.about_me_card {
+    width: 80%;
+    height: 430px;
+    background-color: #FFFFFF;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 20px;
+    padding: 15px;
+}
+.about_me_card h3 {
+    font-size: 2.2em;
+}
+.about_me_card p {
+    font-size: 1.1em;
+    width: 85%;
+    color: #414A4C;
+}
+.about_me_3 p {
+    font-size: 1.2em;
+    color: #414A4C;
+}
+.about_me_1 img {
+    height: 40%;
+    /* margin: auto; */
+    opacity: 0.3;
+    display: block;
+    margin: auto;
+
+}
+#globe {
+    height: 12%;
+}
+
+#ghibli_one {
+    width: 98%;
+    margin-top: 18px;
+}
+.about_me_3 img {
+    height: 40%;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+}
+.about_me_3 p {
+    padding-top: 16px;
+    width: 60%;
+    font-size: 1em;
+    margin: auto;
+}
+
+
 
 
 
@@ -168,12 +256,6 @@ nav ul li:hover {
     height: 7px;
     
 }
-
-
-
-
-
-
 .experience_body_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -259,7 +341,7 @@ nav ul li:hover {
     border-radius: 3%;
 }
 .consultation_image img{
-    height: 650px;
+    height: 550px;
     width: 100%;
     opacity: 0.5;
     border-radius: 3%;
